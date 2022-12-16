@@ -33,7 +33,7 @@ kubectl get node
 6.Install Lens (Options)
 https://k8slens.dev/
 
-- Open Lens add 24slg-nonprod cluster
+- Open Lens add gmmo-nonprod cluster
 
 # Agenda
 - Overview k8s 
