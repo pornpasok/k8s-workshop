@@ -44,6 +44,9 @@ https://k8slens.dev/
 - Why k8s?
 - Who use k8s?
 https://kubernetes.io/case-studies/
+- Workshop 1 (Deploy k8s App with kubectl)
+- Workshop 2 (Deploy k8s App with Jenkins CI/CD Pipeline)
+
 
 # Workshop 1
 - kubectl get all, ns, deployment, pod, service
