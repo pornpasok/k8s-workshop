@@ -46,6 +46,7 @@ https://k8slens.dev/
 https://kubernetes.io/case-studies/
 - Workshop 1 (Deploy k8s App with kubectl)
 - Workshop 2 (Deploy k8s App with Jenkins CI/CD Pipeline)
+- Q & A
 
 
 # Workshop 1
