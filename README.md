@@ -102,7 +102,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: yourname-web.gmmo.tech
+    - host: yourname-workshop.gmmo.tech
       http:
         paths:
           - path: /
@@ -159,7 +159,7 @@ https://cicd.gmmo.tech/
 - ELASTIC_APM_SERVER_URL = "https://XXX.apm.us-central1.gcp.cloud.es.io:443" 
 
 ## [CloudFlare]
-8. Create subdomain [name-app]-web.gmmo.tech
+8. Create subdomain [name-app]-workshop.gmmo.tech
 
 # Jenkins
 https://cicd.gmmo.tech/
