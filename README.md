@@ -101,9 +101,13 @@ spec:
     - host: yourname-web.gmmo.tech
       http:
         paths:
-          - backend:
-              serviceName: yourname-web
-              servicePort: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: yourname-web
+                port:
+                  number: 80
 EOF
 
 # Scale App
