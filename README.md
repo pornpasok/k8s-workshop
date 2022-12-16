@@ -2,7 +2,7 @@
 GitHub/GitLab + Jenkins CI/CD Pipeline + k8s (EKS)
 
 # GMM O Shopping CI/CD v1 Overview
-![24Fix CI/CD v1](images/24fix_v1.png)
+![GMM O CI/CD v1](images/gmmo_v1.drawio.png)
 
 # Prepair your computer
 1.Install aws cli
@@ -127,7 +127,7 @@ kubectl delete deployment yourname-web -n workshop
 
 ## [GitLab]
 1. Create your repository https://gitlab.com/gmmo/workshop/[name-app]
-2. Fork from https://gitlab.com/pornpasok/k8s-workshop to your repository
+2. Fork from https://github.com/pornpasok/k8s-workshop to your repository
 3. Edit Jenkinsfile
 - APP_GIT_URL = "https://gitlab.com/gmmo/workshop/[name-app]"
 - APP_BRANCH = "main"
