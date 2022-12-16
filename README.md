@@ -13,7 +13,7 @@ https://kubernetes.io/docs/tasks/tools/
 
 3.Insert aws credentials to ~/.aws/credentials
 ```
-[gmmo-nonprod]
+[gmmosp-nonprod]
 aws_access_key_id=XXX
 aws_secret_access_key=XXX
 ```
@@ -22,7 +22,7 @@ aws_secret_access_key=XXX
 ```
 aws eks update-kubeconfig --name gmmo-nonprod \
 --region ap-southeast-1 \
---profile gmmo-nonprod
+--profile gmmosp-nonprod
 ```
 
 5.Test 
