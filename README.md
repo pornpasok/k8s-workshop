@@ -49,7 +49,7 @@ https://kubernetes.io/case-studies/
 - Q & A
 
 
-# Workshop 1
+# Workshop 1 (Deploy k8s App with kubectl)
 - kubectl get all, ns, deployment, pod, service
 - kubectl create ns
 - kubectl create deployment
@@ -126,8 +126,8 @@ kubectl delete service yourname-web -n workshop
 # Delete Deployment
 kubectl delete deployment yourname-web -n workshop
 ```
-
-# Workshop 2
+ 
+# Workshop 2 (Deploy k8s App with Jenkins CI/CD Pipeline)
 - Deploy k8s App with Jenkins CI/CD Pipeline
 - Deploy k8s App in Dev ENV (build, tag, push, pull images)
 - Deploy k8s App in QA ENV (from images tag)
