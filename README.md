@@ -79,52 +79,55 @@ kubectl get ns
 # Show Deployment
 kubectl get deployments -n workshop
 
+# Create Namespace
+kubectl create ns workshop
+
 # Create Deployment
-kubectl create deployment yourname-web --image=nginx -n workshop
+kubectl create deployment [yourname]-web --image=nginx -n workshop
 
 # Port Forward
-kubectl port-forward yourname-web-xxx 8080:80 -n workshop
+kubectl port-forward [yourname]-web-xxx 8080:80 -n workshop
 
 # Show Logs
-kubectl logs -f yourname-web-xxx -n workshop
+kubectl logs -f [yourname]-web-xxx -n workshop
 
 # Expose Service
-kubectl expose deployment yourname-web --port=80 --target-port=80 -n workshop
+kubectl expose deployment [yourname]-web --port=80 --target-port=80 -n workshop
 
 # Create Ingress
 cat <<EOF | kubectl apply -f -
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: yourname-web
+  name: [yourname]-web
   namespace: workshop
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: yourname-workshop.gmmo.tech
+    - host: [yourname]-workshop.gmmo.tech
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: yourname-web
+                name: [yourname]-web
                 port:
                   number: 80
 EOF
 
 # Scale App
-kubectl scale deployment/yourname-web --replicas=2 -n workshop
+kubectl scale deployment/[yourname]-web --replicas=2 -n workshop
 
 # Delete Ingress
-kubectl delete ingress yourname-web -n workshop
+kubectl delete ingress [yourname]-web -n workshop
 
 # Delete Service
-kubectl delete service yourname-web -n workshop
+kubectl delete service [yourname-web] -n workshop
 
 # Delete Deployment
-kubectl delete deployment yourname-web -n workshop
+kubectl delete deployment [yourname]-web -n workshop
 ```
  
 # Workshop 2 (Deploy k8s App with Jenkins CI/CD Pipeline)
