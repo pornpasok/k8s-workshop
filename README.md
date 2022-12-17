@@ -93,7 +93,7 @@ kubectl expose deployment yourname-web --port=80 --target-port=80 -n workshop
 
 # Create Ingress
 cat <<EOF | kubectl apply -f -
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: yourname-web
