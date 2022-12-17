@@ -85,6 +85,9 @@ kubectl create ns workshop
 # Create Deployment
 kubectl create deployment [yourname]-web --image=nginx -n workshop
 
+# Show Pods
+kubectl get pod -n workshop
+
 # Port Forward
 kubectl port-forward [yourname]-web-xxx 8080:80 -n workshop
 
