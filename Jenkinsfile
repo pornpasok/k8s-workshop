@@ -8,7 +8,7 @@ pipeline {
         APP_PORT = "3000"
         DEV_PROJECT = "workshop"
         SQ_SERVER = "https://sq.gmmo.tech"
-        ECR_SERVER = "470797444311.dkr.ecr.ap-southeast-1.amazonaws.com"
+        ECR_SERVER = "299745677970.dkr.ecr.ap-southeast-1.amazonaws.com"
         AWS_DEFAULT_REGION = "ap-southeast-1"
         AWS_DEFAULT_PROFILE = "default"
         DOMAIN_NAME = "gmmo.tech"
